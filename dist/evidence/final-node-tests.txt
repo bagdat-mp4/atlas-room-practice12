@@ -1,32 +1,39 @@
 npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
 
 > smart-campus-practice13@1.0.0 test
-> node --test tests/contract.cjs
+> node --test tests/*.cjs
 
-✔ T1 Free interval (1.214146ms)
-✔ T2 Partial overlap (0.239941ms)
-✔ T3 Blocked room (0.087702ms)
-✔ T4 Zero minutes (0.082845ms)
-✔ T5 Over the limit (0.077216ms)
-✔ T6 Before the clock (0.266471ms)
-✔ T7 Touches 11:00 end (0.114192ms)
-✔ T8 Read-only bookings (0.712362ms)
-✔ exactly 09:00 (0.164548ms)
-✔ exactly 120 minutes (0.141152ms)
-✔ touch before 10:00 (0.101012ms)
-✔ one minute of overlap (0.096135ms)
-✔ fraction (0.048944ms)
-✔ blank time (0.036635ms)
-✔ blank duration (0.109805ms)
-✔ malformed time (0.06628ms)
-✔ cannot cross midnight (0.040261ms)
-✔ may end at midnight (0.069074ms)
-✔ blocked overrides overlap (0.037146ms)
-ℹ tests 19
+✔ T1 Free interval (2.519204ms)
+✔ T2 Partial overlap (0.352169ms)
+✔ T3 Blocked room (0.202764ms)
+✔ T4 Zero minutes (0.252148ms)
+✔ T5 Over the limit (0.220431ms)
+✔ T6 Before the clock (0.224137ms)
+✔ T7 Touches 11:00 end (0.231027ms)
+✔ T8 Read-only bookings (1.634745ms)
+✔ exactly 09:00 (0.376796ms)
+✔ exactly 120 minutes (0.467311ms)
+✔ touch before 10:00 (0.225159ms)
+✔ one minute of overlap (0.242114ms)
+✔ fraction (0.185708ms)
+✔ blank time (0.220672ms)
+✔ blank duration (0.229434ms)
+✔ malformed time (0.288063ms)
+✔ cannot cross midnight (0.195644ms)
+✔ may end at midnight (0.337577ms)
+✔ blocked overrides overlap (1.335245ms)
+✔ native duration input preserves the raw text for validation (1.565632ms)
+✔ native duration parser preserves or rejects "120.00001" (2.895028ms)
+✔ native duration parser preserves or rejects "1e2" (1.575827ms)
+✔ native duration parser preserves or rejects "120" (1.516297ms)
+✔ native duration parser preserves or rejects "1.5" (1.457509ms)
+✔ native duration parser preserves or rejects "" (1.452882ms)
+✔ native duration parser preserves or rejects "abc" (1.759482ms)
+ℹ tests 26
 ℹ suites 0
-ℹ pass 19
+ℹ pass 26
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 96.81352
+ℹ duration_ms 189.381612

@@ -31,7 +31,8 @@ files = {str(p.relative_to(site)):p.read_text() for p in sorted((site/'app').ite
 files['index.html'] = (site/'index.html').read_text()
 for n in ['LICENSE.txt','bootstrap-LICENSE.txt','formio.full.min.js.LICENSE.txt']:
     files['vendor/'+n]=(site/'vendor'/n).read_text()
-files['tests/contract.cjs']=(root/'tests/contract.cjs').read_text()
+for test_path in sorted((root/'tests').glob('*.cjs')):
+    files['tests/'+test_path.name]=test_path.read_text()
 files['package.json']=(root/'package.json').read_text()
 files['README.md']=(root/'README.md').read_text()
 blob_js = '''

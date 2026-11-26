@@ -40,15 +40,15 @@
           "size": "md",
           "components": [
             {
-              "type": "number",
+              "type": "textfield",
               "key": "duration",
               "label": "Duration (min)",
               "input": true,
               "tableView": false,
-              "defaultValue": 45,
-              "delimiter": false,
-              "decimalLimit": 4,
-              "allowNegative": true
+              "defaultValue": "45",
+              "inputType": "text",
+              "inputMode": "decimal",
+              "autocomplete": "off"
             }
           ],
           "offset": 0,
@@ -122,6 +122,15 @@
     },
     {
       "type": "hidden",
+      "key": "durationMinutes",
+      "label": "durationMinutes",
+      "input": true,
+      "tableView": false,
+      "persistent": false,
+      "calculateValue": "const raw = String(data.duration ?? '').trim();\nvalue = /^[-+]?\\d+(?:\\.\\d+)?$/.test(raw) ? Number(raw) : -1;"
+    },
+    {
+      "type": "hidden",
       "key": "reasonCode",
       "label": "reasonCode",
       "input": true,
@@ -142,7 +151,7 @@
               {
                 "<=": [
                   {
-                    "var": "data.duration"
+                    "var": "data.durationMinutes"
                   },
                   0
                 ]
@@ -152,7 +161,7 @@
                   {
                     "%": [
                       {
-                        "var": "data.duration"
+                        "var": "data.durationMinutes"
                       },
                       1
                     ]
@@ -168,7 +177,7 @@
                         "var": "data.startMinute"
                       },
                       {
-                        "var": "data.duration"
+                        "var": "data.durationMinutes"
                       }
                     ]
                   },
@@ -192,7 +201,7 @@
           {
             ">": [
               {
-                "var": "data.duration"
+                "var": "data.durationMinutes"
               },
               120
             ]
@@ -224,7 +233,7 @@
                             "var": "data.startMinute"
                           },
                           {
-                            "var": "data.duration"
+                            "var": "data.durationMinutes"
                           }
                         ]
                       },
@@ -255,7 +264,7 @@
                             "var": "data.startMinute"
                           },
                           {
-                            "var": "data.duration"
+                            "var": "data.durationMinutes"
                           }
                         ]
                       },

@@ -1,0 +1,27 @@
+[
+  {
+    "raw": "120.00001",
+    "displayed": "120.00001",
+    "code": "INVALID_INTERVAL"
+  },
+  {
+    "raw": "1e2",
+    "displayed": "1e2",
+    "code": "INVALID_INTERVAL"
+  },
+  {
+    "raw": "120",
+    "displayed": "120",
+    "code": "AVAILABLE"
+  },
+  {
+    "raw": "1.5",
+    "displayed": "1.5",
+    "code": "INVALID_INTERVAL"
+  },
+  {
+    "raw": "",
+    "displayed": "",
+    "code": "INVALID_INTERVAL"
+  }
+]
