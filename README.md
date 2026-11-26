@@ -36,7 +36,7 @@ One fictional Atlas 204 room has bookings at 10:00–11:00 and 14:30–15:30. Th
 
 ## Provenance and limitations
 
-ChatGPT assisted implementation and review. The completed page was imported, tested and published in the existing Bolt project. The native Form.io visual designer was used to edit and export the form. Nineteen Node tests passed inside Bolt, and both eight-case suites passed on Bolt Hosting. The exact AI model snapshot is unavailable.
+ChatGPT assisted implementation and review. The completed page was imported, tested and published in the existing Bolt project. The native Form.io visual designer was used to edit and export the form. Nineteen Node tests passed inside Bolt, and both eight-case suites passed on Bolt Hosting. Final repository packaging and verification used GPT-6.1-Sol. Earlier model snapshots were not exposed in the recorded evidence.
 
 Timing values describe initial automated and browser preparation intervals. They do not measure all manual engineering effort or establish a general development-speed advantage. The code debugging interval captures an automated patch operation only.
 

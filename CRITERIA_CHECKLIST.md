@@ -16,7 +16,7 @@ The supplied Lesson 12 Practice handout names the lesson Practice 12 and explici
 | Actual Bolt execution and publication | `dist/evidence/bolt-editor.jpg`, `dist/evidence/bolt-hosting.jpg`, report page 9, live Bolt URL in README |
 | Public repository with actual source, report and screenshots | Actual files in `dist/`, `tests/`, `tools/`, `reports/` and this repository |
 | Export | `dist/source.html` and `dist/app/atlas-form.json` |
-| Name, ID, class day/time and tool/model record | PDF cover and AI-use record. Exact earlier model snapshot was unavailable and is disclosed. |
+| Name, ID, class day/time and tool/model record | PDF cover and AI-use record. Final packaging used GPT-6.1-Sol. Earlier model snapshots were unavailable and are disclosed. |
 | No ZIP, RAR or OneDrive submission | Individually accessible files and links |
 
 The low-code behavior is executed by the native Form.io runtime. The room and bookings are classroom fixtures. The exact AI model snapshot and all manual engineering time were not captured. These limits are stated explicitly. Functional checks passed for all required cases. Student review and defense are the student's remaining work.
