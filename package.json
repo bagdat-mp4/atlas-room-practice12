@@ -1,0 +1,14 @@
+{
+  "name": "smart-campus-practice13",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Compare JavaScript and Form.io for a read-only classroom room checker.",
+  "scripts": {
+    "test": "node --test tests/contract.cjs",
+    "start": "node tools/serve.cjs"
+  },
+  "dependencies": {
+    "@formio/js": "5.7.2",
+    "bootstrap": "5.3.8"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "practice": "12",
+  "baseline": "Bolt Practice 11 version 3, 2026-11-22",
+  "artifacts": {
+    "booking-rules.js": "8157556a15ca7a1ef5b3553ebf4d34e8e64b3efab07b299be6c27872777e39b4",
+    "fixtures.js": "612405dcb2202d7b66997f6abf857553e08c6aefa3e9ebd87e6b3c1d0954d237"
+  },
+  "originalBoltTests": {
+    "nodePassed": 57,
+    "legacyPassed": 37
+  },
+  "restoredLocalTests": {
+    "nodePassed": 56,
+    "nodeTotal": 57,
+    "legacyPassed": 37,
+    "checkpoint": "The Practice 11 source export omitted baseline/practice11-before/dist. Its historical byte-comparison check could not run."
+  },
+  "mobileViewportCssPixels": 390
+}

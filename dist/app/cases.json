@@ -1,0 +1,78 @@
+{
+  "clock": "09:00",
+  "room": "Atlas 204",
+  "bookings": [
+    [
+      600,
+      660
+    ],
+    [
+      870,
+      930
+    ]
+  ],
+  "cases": [
+    {
+      "id": "T1",
+      "label": "Free interval",
+      "start": "12:00",
+      "duration": 45,
+      "blocked": false,
+      "expect": "AVAILABLE"
+    },
+    {
+      "id": "T2",
+      "label": "Partial overlap",
+      "start": "10:30",
+      "duration": 45,
+      "blocked": false,
+      "expect": "OVERLAP"
+    },
+    {
+      "id": "T3",
+      "label": "Blocked room",
+      "start": "12:00",
+      "duration": 45,
+      "blocked": true,
+      "expect": "BLOCKED"
+    },
+    {
+      "id": "T4",
+      "label": "Zero minutes",
+      "start": "12:00",
+      "duration": 0,
+      "blocked": false,
+      "expect": "INVALID_INTERVAL"
+    },
+    {
+      "id": "T5",
+      "label": "Over the limit",
+      "start": "12:00",
+      "duration": 121,
+      "blocked": false,
+      "expect": "TOO_LONG"
+    },
+    {
+      "id": "T6",
+      "label": "Before the clock",
+      "start": "08:45",
+      "duration": 30,
+      "blocked": false,
+      "expect": "NOT_FUTURE"
+    },
+    {
+      "id": "T7",
+      "label": "Touches 11:00 end",
+      "start": "11:00",
+      "duration": 30,
+      "blocked": false,
+      "expect": "AVAILABLE"
+    },
+    {
+      "id": "T8",
+      "label": "Read-only bookings",
+      "action": "repeat T1\u2013T7 and compare both booking intervals, all values and their order before/after",
+      "expect": "UNCHANGED"
+    }
+  ]
+}

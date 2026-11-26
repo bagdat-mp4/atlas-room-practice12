@@ -1,0 +1,174 @@
+[
+  {
+    "id": "T1",
+    "label": "Free interval",
+    "expect": "AVAILABLE",
+    "code": {
+      "result": "AVAILABLE",
+      "ok": true,
+      "available": true,
+      "message": "The room is free for this interval."
+    },
+    "low": {
+      "result": "AVAILABLE",
+      "ok": true,
+      "available": true,
+      "message": "The room is free for this interval."
+    }
+  },
+  {
+    "id": "T2",
+    "label": "Partial overlap",
+    "expect": "OVERLAP",
+    "code": {
+      "result": "OVERLAP",
+      "ok": true,
+      "available": false,
+      "message": "This interval overlaps an existing booking."
+    },
+    "low": {
+      "result": "OVERLAP",
+      "ok": true,
+      "available": false,
+      "message": "This interval overlaps an existing booking."
+    }
+  },
+  {
+    "id": "T3",
+    "label": "Blocked room",
+    "expect": "BLOCKED",
+    "code": {
+      "result": "BLOCKED",
+      "ok": true,
+      "available": false,
+      "message": "The room is blocked for maintenance."
+    },
+    "low": {
+      "result": "BLOCKED",
+      "ok": true,
+      "available": false,
+      "message": "The room is blocked for maintenance."
+    }
+  },
+  {
+    "id": "T4",
+    "label": "Zero minutes",
+    "expect": "INVALID_INTERVAL",
+    "code": {
+      "result": "INVALID_INTERVAL",
+      "ok": true,
+      "available": false,
+      "message": "Enter a valid time and a positive whole number of minutes. Finish by 24:00."
+    },
+    "low": {
+      "result": "INVALID_INTERVAL",
+      "ok": true,
+      "available": false,
+      "message": "Enter a valid time and a positive whole number of minutes. Finish by 24:00."
+    }
+  },
+  {
+    "id": "T5",
+    "label": "Over the limit",
+    "expect": "TOO_LONG",
+    "code": {
+      "result": "TOO_LONG",
+      "ok": true,
+      "available": false,
+      "message": "Use a duration of 120 minutes or less."
+    },
+    "low": {
+      "result": "TOO_LONG",
+      "ok": true,
+      "available": false,
+      "message": "Use a duration of 120 minutes or less."
+    }
+  },
+  {
+    "id": "T6",
+    "label": "Before the clock",
+    "expect": "NOT_FUTURE",
+    "code": {
+      "result": "NOT_FUTURE",
+      "ok": true,
+      "available": false,
+      "message": "Choose a start time after the 09:00 demo clock."
+    },
+    "low": {
+      "result": "NOT_FUTURE",
+      "ok": true,
+      "available": false,
+      "message": "Choose a start time after the 09:00 demo clock."
+    }
+  },
+  {
+    "id": "T7",
+    "label": "Touches 11:00 end",
+    "expect": "AVAILABLE",
+    "code": {
+      "result": "AVAILABLE",
+      "ok": true,
+      "available": true,
+      "message": "The room is free for this interval."
+    },
+    "low": {
+      "result": "AVAILABLE",
+      "ok": true,
+      "available": true,
+      "message": "The room is free for this interval."
+    }
+  },
+  {
+    "id": "T8",
+    "label": "Read-only bookings",
+    "expect": "UNCHANGED",
+    "code": {
+      "result": "UNCHANGED",
+      "ok": true,
+      "before": [
+        [
+          600,
+          660
+        ],
+        [
+          870,
+          930
+        ]
+      ],
+      "after": [
+        [
+          600,
+          660
+        ],
+        [
+          870,
+          930
+        ]
+      ]
+    },
+    "low": {
+      "result": "UNCHANGED",
+      "ok": true,
+      "before": [
+        [
+          600,
+          660
+        ],
+        [
+          870,
+          930
+        ]
+      ],
+      "after": [
+        [
+          600,
+          660
+        ],
+        [
+          870,
+          930
+        ]
+      ]
+    }
+  }
+]

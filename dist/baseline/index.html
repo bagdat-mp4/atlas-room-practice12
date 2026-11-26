@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Check fictional campus room availability for a time interval.">
+  <title>Smart Campus Room Availability</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><strong>SMART CAMPUS</strong></header>
+  <main class="shell">
+    <div class="eyebrow">Room availability</div>
+    <h1>Find a time that works.</h1>
+    <p class="intro">Choose a room and check your time range. We will check the schedule before you make plans.</p>
+    <div class="clock"><strong>09:00</strong><span>Demo clock<br>All times are within one fictional day.</span></div>
+    <div class="grid">
+      <section class="card" aria-labelledby="check-title">
+        <h2 id="check-title">Check a room</h2>
+        <form id="availability-form" novalidate>
+          <label for="room">Room</label>
+          <select id="room"><option value="atlas">Atlas 204</option><option value="nova">Nova 108</option><option value="studio">Studio 310</option></select>
+          <div class="times">
+            <div><label for="start">Start time</label><input id="start" value="11:00" placeholder="HH:MM" inputmode="text" autocomplete="off" aria-describedby="time-hint"></div>
+            <div><label for="end">End time</label><input id="end" value="12:00" placeholder="HH:MM" inputmode="text" autocomplete="off" aria-describedby="time-hint"></div>
+          </div>
+          <p class="hint" id="time-hint">Use HH:MM, from 00:00 to 24:00. Maximum 120 minutes.</p>
+          <button type="submit">Check availability</button>
+        </form>
+        <div id="result" class="result" role="status" aria-live="polite"><strong>Ready to check</strong><p>Enter a time range and press Check availability.</p></div>
+      </section>
+      <aside class="card" aria-labelledby="room-name">
+        <h2 id="room-name">Atlas 204</h2>
+        <p class="metadata" id="room-meta">Seminar room / 32 seats</p>
+        <div id="room-state" class="state">Room is open</div>
+        <div class="eyebrow">Existing bookings</div>
+        <ul class="bookings" id="bookings"></ul>
+        <p class="note">A booking may start exactly when an existing one ends.</p>
+      </aside>
+    </div>
+    <p class="footer"><strong>Practice 11: optional mock explanation. One selected room per check.</strong><br>Fictional rooms and bookings. This checker does not save or confirm a booking.</p>
+  </main>
+  <script src="booking-rules.js"></script>
+  <script src="fixtures.js"></script>
+  <script src="availability.js"></script>
+  <script src="explain-adapter.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

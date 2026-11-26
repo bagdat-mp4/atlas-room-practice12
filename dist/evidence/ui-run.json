@@ -1,0 +1,182 @@
+{
+  "low": {
+    "elapsedSeconds": 8.071,
+    "observations": [
+      {
+        "id": "T1",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "T2",
+        "expected": "OVERLAP",
+        "actual": "OVERLAP"
+      },
+      {
+        "id": "T3",
+        "expected": "BLOCKED",
+        "actual": "BLOCKED"
+      },
+      {
+        "id": "T4",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "T5",
+        "expected": "TOO_LONG",
+        "actual": "TOO_LONG"
+      },
+      {
+        "id": "T6",
+        "expected": "NOT_FUTURE",
+        "actual": "NOT_FUTURE"
+      },
+      {
+        "id": "T7",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E1",
+        "expected": "NOT_FUTURE",
+        "actual": "NOT_FUTURE"
+      },
+      {
+        "id": "E2",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E3",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E4",
+        "expected": "OVERLAP",
+        "actual": "OVERLAP"
+      },
+      {
+        "id": "E5",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E6",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E7",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E8",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E9",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E10",
+        "expected": "BLOCKED",
+        "actual": "BLOCKED"
+      }
+    ]
+  },
+  "code": {
+    "elapsedSeconds": 8.645,
+    "observations": [
+      {
+        "id": "T1",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "T2",
+        "expected": "OVERLAP",
+        "actual": "OVERLAP"
+      },
+      {
+        "id": "T3",
+        "expected": "BLOCKED",
+        "actual": "BLOCKED"
+      },
+      {
+        "id": "T4",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "T5",
+        "expected": "TOO_LONG",
+        "actual": "TOO_LONG"
+      },
+      {
+        "id": "T6",
+        "expected": "NOT_FUTURE",
+        "actual": "NOT_FUTURE"
+      },
+      {
+        "id": "T7",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E1",
+        "expected": "NOT_FUTURE",
+        "actual": "NOT_FUTURE"
+      },
+      {
+        "id": "E2",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E3",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E4",
+        "expected": "OVERLAP",
+        "actual": "OVERLAP"
+      },
+      {
+        "id": "E5",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E6",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E7",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E8",
+        "expected": "INVALID_INTERVAL",
+        "actual": "INVALID_INTERVAL"
+      },
+      {
+        "id": "E9",
+        "expected": "AVAILABLE",
+        "actual": "AVAILABLE"
+      },
+      {
+        "id": "E10",
+        "expected": "BLOCKED",
+        "actual": "BLOCKED"
+      }
+    ]
+  }
+}

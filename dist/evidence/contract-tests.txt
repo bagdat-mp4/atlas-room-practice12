@@ -1,0 +1,27 @@
+✔ T1 Free interval (1.351225ms)
+✔ T2 Partial overlap (0.166399ms)
+✔ T3 Blocked room (0.083475ms)
+✔ T4 Zero minutes (0.084026ms)
+✔ T5 Over the limit (0.080091ms)
+✔ T6 Before the clock (0.102824ms)
+✔ T7 Touches 11:00 end (0.104256ms)
+✔ T8 Read-only bookings (0.890615ms)
+✔ exactly 09:00 (0.287721ms)
+✔ exactly 120 minutes (0.266249ms)
+✔ touch before 10:00 (0.148021ms)
+✔ one minute of overlap (0.191126ms)
+✔ fraction (0.10048ms)
+✔ blank time (0.0864ms)
+✔ blank duration (0.203325ms)
+✔ malformed time (0.124697ms)
+✔ cannot cross midnight (0.092268ms)
+✔ may end at midnight (0.149955ms)
+✔ blocked overrides overlap (0.084567ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 142.538658

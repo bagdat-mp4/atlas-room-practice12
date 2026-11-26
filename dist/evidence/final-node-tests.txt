@@ -1,0 +1,32 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> smart-campus-practice13@1.0.0 test
+> node --test tests/contract.cjs
+
+✔ T1 Free interval (1.214146ms)
+✔ T2 Partial overlap (0.239941ms)
+✔ T3 Blocked room (0.087702ms)
+✔ T4 Zero minutes (0.082845ms)
+✔ T5 Over the limit (0.077216ms)
+✔ T6 Before the clock (0.266471ms)
+✔ T7 Touches 11:00 end (0.114192ms)
+✔ T8 Read-only bookings (0.712362ms)
+✔ exactly 09:00 (0.164548ms)
+✔ exactly 120 minutes (0.141152ms)
+✔ touch before 10:00 (0.101012ms)
+✔ one minute of overlap (0.096135ms)
+✔ fraction (0.048944ms)
+✔ blank time (0.036635ms)
+✔ blank duration (0.109805ms)
+✔ malformed time (0.06628ms)
+✔ cannot cross midnight (0.040261ms)
+✔ may end at midnight (0.069074ms)
+✔ blocked overrides overlap (0.037146ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 96.81352

@@ -1,3 +1,5 @@
+> Historical text snapshot. The current runnable files, PDF and screenshots are now stored directly in this repository. Follow README.md for setup and CRITERIA_CHECKLIST.md for the submission map.
+
 # Practice 12 source export
 
 Verified and published from Bolt project https://bolt.new/~/sb1-rc7hzhwx
